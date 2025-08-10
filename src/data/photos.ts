@@ -4,15 +4,15 @@ import h2 from "@/assets/highlights/image copy.png";
 import h3 from "@/assets/highlights/image copy 2.png";
 import h4 from "@/assets/highlights/image copy 3.png";
 import h5 from "@/assets/highlights/image copy 4.png";
-import p1 from "@/assets/photos/photo-01.jpg";
-import p2 from "@/assets/photos/photo-02.jpg";
-import p3 from "@/assets/photos/photo-03.jpg";
-import p4 from "@/assets/photos/photo-04.jpg";
-import p5 from "@/assets/photos/photo-05.jpg";
-import p6 from "@/assets/photos/photo-06.jpg";
-import p7 from "@/assets/photos/photo-07.jpg";
-import p8 from "@/assets/photos/photo-08.jpg";
-import p9 from "@/assets/photos/photo-09.jpg";
+import p1 from "@/assets/photos/Screenshot 2025-08-10 at 12-00-01 Instagram.png";
+import p2 from "@/assets/photos/Screenshot 2025-08-10 at 12-00-11 Instagram.png";
+import p3 from "@/assets/photos/Screenshot 2025-08-10 at 12-00-19 Instagram.png";
+import p4 from "@/assets/photos/Screenshot 2025-08-10 at 12-00-33 Instagram.png";
+import p5 from "@/assets/photos/Screenshot 2025-08-10 at 12-00-43 Instagram.png";
+import p6 from "@/assets/photos/Screenshot 2025-08-10 at 12-01-04 Instagram.png";
+import p7 from "@/assets/photos/Screenshot 2025-08-10 at 12-01-12 Instagram.png";
+import p8 from "@/assets/photos/Screenshot 2025-08-10 at 12-01-22 Instagram.png";
+import p9 from "@/assets/photos/Screenshot 2025-08-10 at 12-01-30 Instagram.png";
 
 export const profileData = {
   username: "sarthack.sharma",
