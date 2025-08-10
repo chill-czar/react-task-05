@@ -1,9 +1,9 @@
-import profile from "@/assets/profile/profile.jpg";
-import h1 from "@/assets/highlights/highlight-01.jpg";
-import h2 from "@/assets/highlights/highlight-02.jpg";
-import h3 from "@/assets/highlights/highlight-03.jpg";
-import h4 from "@/assets/highlights/highlight-04.jpg";
-import h5 from "@/assets/highlights/highlight-05.jpg";
+import profile from "@/assets/profile/image.png";
+import h1 from "@/assets/highlights/image.png";
+import h2 from "@/assets/highlights/image copy.png";
+import h3 from "@/assets/highlights/image copy 2.png";
+import h4 from "@/assets/highlights/image copy 3.png";
+import h5 from "@/assets/highlights/image copy 4.png";
 import p1 from "@/assets/photos/photo-01.jpg";
 import p2 from "@/assets/photos/photo-02.jpg";
 import p3 from "@/assets/photos/photo-03.jpg";
@@ -15,15 +15,15 @@ import p8 from "@/assets/photos/photo-08.jpg";
 import p9 from "@/assets/photos/photo-09.jpg";
 
 export const profileData = {
-  username: "modern.creative",
-  name: "Modern Creative",
-  bio: "Design • Coffee • Minimalism\nBuilding small things with great love.",
-  website: "https://example.com",
+  username: "sarthack.sharma",
+  name: "Sarthak Sharma",
+  bio: "Making Impact.\n @sheryians_coding_school 🚀\n Tech Creator | Full Stack Developer",
+  website: "saarthack.github.io/portfolio",
   avatar: profile,
   counts: {
-    posts: 342,
-    followers: "12.8k",
-    following: 842,
+    posts: 19,
+    followers: "10.3k",
+    following: 289,
   },
 };
 
@@ -43,6 +43,12 @@ export const photos = [
   { id: "p5", src: p5, alt: "Workspace flatlay", likes: 377, comments: 21 },
   { id: "p6", src: p6, alt: "Neon reflections", likes: 621, comments: 53 },
   { id: "p7", src: p7, alt: "Pastry close-up", likes: 245, comments: 13 },
-  { id: "p8", src: p8, alt: "Concrete texture shadow", likes: 199, comments: 11 },
+  {
+    id: "p8",
+    src: p8,
+    alt: "Concrete texture shadow",
+    likes: 199,
+    comments: 11,
+  },
   { id: "p9", src: p9, alt: "Geometric staircase", likes: 458, comments: 38 },
 ];
