@@ -1,13 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Seo from "@/components/Seo";
+import ProfileHeader from "@/components/profile/ProfileHeader";
+import Highlights from "@/components/profile/Highlights";
+import ProfileTabs from "@/components/profile/ProfileTabs";
+import { profileData } from "@/data/photos";
 
 const Index = () => {
+  const title = `${profileData.name} (@${profileData.username}) • Instagram Profile`;
+  const description = `${profileData.name} — ${profileData.bio.replace(/\n/g, " ")}`.slice(0, 150);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background">
+      <Seo title={title} description={description} image={profileData.avatar} />
+      <section className="container mx-auto max-w-5xl px-4 py-8">
+        <ProfileHeader />
+        <Highlights />
+        <ProfileTabs />
+      </section>
+    </main>
   );
 };
 

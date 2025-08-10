@@ -39,20 +39,28 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand accents inspired by Instagram */
+    --ig-orange: 28 96% 61%;
+    --ig-pink: 340 82% 60%;
+    --ig-purple: 265 84% 60%;
+    --ig-yellow: 45 95% 60%;
+
+    /* Gradients & effects */
+    --gradient-brand: linear-gradient(135deg, hsl(var(--ig-orange)), hsl(var(--ig-pink)) 40%, hsl(var(--ig-purple)) 80%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows & motion */
+    --shadow-elevated: 0 10px 30px -10px hsl(var(--foreground) / 0.15);
+    --shadow-glow: 0 0 40px hsl(var(--ig-pink) / 0.35);
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
@@ -101,5 +109,35 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Utilities & signature interactions */
+@layer utilities {
+  .gradient-text {
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .avatar-gradient-ring {
+    position: relative;
+    display: inline-block;
+    padding: 3px; /* ring thickness */
+    border-radius: 9999px;
+    background: var(--gradient-brand);
+    box-shadow: var(--shadow-glow);
+  }
+  .avatar-gradient-ring img {
+    display: block;
+    border-radius: 9999px;
+  }
+
+  .hover-tilt {
+    transition: transform 200ms ease;
+  }
+  .hover-tilt:hover {
+    transform: translateY(-2px);
   }
 }
